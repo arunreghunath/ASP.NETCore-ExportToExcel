@@ -66,12 +66,13 @@ namespace CoreDemoCRUD.Controllers
                 workbook = new XSSFWorkbook();
                 ISheet excelSheet = workbook.CreateSheet("List");
                 IRow row = excelSheet.CreateRow(0);
-
+                // Setting Cell Heading
                 row.CreateCell(0).SetCellValue("Name");
                 row.CreateCell(1).SetCellValue("Email");
                 row.CreateCell(2).SetCellValue("Phone");
                 row.CreateCell(3).SetCellValue("Attend");
                 var tabledata = _context.Responses.OrderByDescending(r => r.WillAttend);
+                // Inserting values to table
                 foreach (var Value in tabledata)
                 {
                     row = excelSheet.CreateRow(RowCount);
@@ -87,13 +88,15 @@ namespace CoreDemoCRUD.Controllers
                     await stream.CopyToAsync(memory);
                 }
                 memory.Position = 0;
+                 // Throws Generated file to Browser
                 try
                 {
                     return File(memory, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", sFileName);
                 }
-
+                // Deletes the generated file from /wwwroot folder
                 finally
                 {
+                
                     var path = Path.Combine(sWebRootFolder, sFileName);
                     if (System.IO.File.Exists(path))
                     {
