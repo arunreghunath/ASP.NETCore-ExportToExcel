@@ -1,2 +1,7 @@
 # ASP.NETCore-ExportToExcel
-Export Database to Excel format. Build on ASP.NET Core 2.1
+This is an example for Exporting a Database to Microsoft Excel format.
+This application is completely build using ASP.NET Core 2.1
+# NuGet Packages Used
+- Microsoft.AspNetCore.App
+- DotNetCore.NPOI
+
