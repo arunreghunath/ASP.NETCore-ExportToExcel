@@ -1,0 +1,20 @@
+﻿@model GuestResponse
+
+<div class="text-center mt-3">
+    <h1>Thank You, @Model.Name</h1>
+
+    @if (Model.WillAttend == true)
+    {
+        <div>
+            <h2 class="text-success ">It's great that you're coming. The drinks are already in the fridge!</h2>
+        </div>
+    }
+    else
+    {
+        <div class="text-warning">
+            <h2>Sorry to hear that you can't make it, but thanks for letting us know.</h2>
+        </div>
+    }
+
+    <p>Click <a asp-action="List">here</a> to see who is coming.</p>
+</div>

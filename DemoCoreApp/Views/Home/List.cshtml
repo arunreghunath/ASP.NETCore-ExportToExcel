@@ -1,0 +1,35 @@
+﻿
+@model IEnumerable<GuestResponse>
+<section class="container-fluid bg-primary text-white text-center">
+    <h1> Here is who is on list</h1>
+</section>
+<br />
+<section class="container">
+    <div>
+        <a asp-action="ExportExcel" class="btn btn-primary">Export to Excel</a>
+    </div>
+    <table class="table">
+        <thead class="thead-drak">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Attending</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (GuestResponse r in Model)
+            {
+                <tr>
+
+                    <td>@r.Name</td>
+                    <td>@r.Email</td>
+                    <td>@r.Phone</td>
+                    <td>@(r.WillAttend == true ? "Yes" : "No")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a class="btn btn-primary" asp-action="Index">Home</a>
+</section>

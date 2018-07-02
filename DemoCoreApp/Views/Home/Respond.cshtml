@@ -1,0 +1,42 @@
+﻿@model GuestResponse
+
+<div class=" container-fluid bg-primary text-center">
+    <h2> RSVP Form</h2>
+</div>
+<section class="container">
+    <div class="container">
+        <div class="text-center col-md-8 bg-info">
+            <h1> We are throwing a party</h1>
+            <br />
+            <h3>
+                Please register your name on the list <br />
+                So we can make you a drink :)
+            </h3>
+        </div>
+
+        <form asp-action="Respond" method="post" class="text-center col-md-4 ">
+            <div class="form-group">
+                <label>Your Name</label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input asp-for="Email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Phone</label>
+                <input asp-for="Phone" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Will you attend?</label>
+                <select asp-for="WillAttend" class="form-control">
+                    <option value="true">Yes, I'll</option>
+                    <option value="false">No, I won't</option>
+                </select>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+    </div>
+    </form>
+</section>
