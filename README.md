@@ -9,7 +9,7 @@ for more details of DotNetCore.NPOI please visit https://github.com/dotnetcore/N
 
 # Development Environment
 - Microsoft Visual Studio Enterprise 2017
-- MIcrosoft SQL Server Developer Edition 2017
+- Microsoft SQL Server Developer Edition 2017
 - Windows 10 Pro
 
 
