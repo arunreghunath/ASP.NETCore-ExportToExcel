@@ -1,4 +1,4 @@
-﻿using DemoCoreApp.Data;
+﻿using ExportToExcelWebApplication.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace DemoCoreApp
+namespace ExportToExcelWebApplication
 {
     public class Startup
     {

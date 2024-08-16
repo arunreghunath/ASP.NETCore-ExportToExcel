@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace DemoCoreApp.Models
+namespace ExportToExcelWebApplication.Models
 {
     public class GuestResponse
     {

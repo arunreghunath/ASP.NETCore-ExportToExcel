@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoCoreApp", "DemoCoreApp.csproj", "{DC9A6CCE-E6A0-4050-94D2-3DED256BF012}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.ExportToExcel.Web", "Demo.ExportToExcel.Web.csproj", "{DC9A6CCE-E6A0-4050-94D2-3DED256BF012}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
