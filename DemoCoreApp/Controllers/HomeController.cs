@@ -2,21 +2,21 @@
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using ExportToExcelWebApplication.Data;
-using ExportToExcelWebApplication.Models;
+using Demo.ExportToExcel.Web.Data;
+using Demo.ExportToExcel.Web.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
 
 
-namespace CoreDemoCRUD.Controllers
+namespace Demo.ExportToExcel.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private IHostingEnvironment _hostingEnvironment;
+        private IWebHostEnvironment _hostingEnvironment;
         private DataContext _context;
-        public HomeController(DataContext context, IHostingEnvironment hostingEnvironment)
+        public HomeController(DataContext context, IWebHostEnvironment hostingEnvironment)
         {
             _context = context;
             _hostingEnvironment = hostingEnvironment;
@@ -54,8 +54,7 @@ namespace CoreDemoCRUD.Controllers
         {
             string sWebRootFolder = _hostingEnvironment.WebRootPath;
             string format = "dd-M-yyyy-hh-mm-ss";
-            string eFileName = String.Format("Excel-Export-{0}.xlsx", DateTime.Now.ToString(format));
-            string sFileName = eFileName;
+            string sFileName = String.Format("Excel-Export-{0}.xlsx", DateTime.Now.ToString(format));
             string URL = string.Format("{0}://{1}/{2}", Request.Scheme, Request.Host, sFileName);
             FileInfo file = new FileInfo(Path.Combine(sWebRootFolder, sFileName));
             var memory = new MemoryStream();
