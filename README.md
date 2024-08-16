@@ -3,7 +3,7 @@
 <p align="center">
 <h1 align="center">ASP.NETCore - Export To Excel<h1>
 <h6>This is an example for Exporting a Database to Microsoft Excel format.
-  This application is completely build using ASP.NET Core 2.1</h6>
+  This application is completely build using ASP.NET Core 2.1 (Migrated to .NET 8)</h6>
 </p>
 <br>
 # NuGet Packages Used
@@ -13,8 +13,8 @@
 for more details of DotNetCore.NPOI please visit https://github.com/dotnetcore/NPOI
 
 # Development Environment
-- Microsoft Visual Studio Enterprise 2017
-- Microsoft SQL Server Developer Edition 2017
-- Windows 10 Pro
+- Microsoft Visual Studio Enterprise 2022
+- Microsoft SQL Server Developer Edition 2022
+- Windows 11 Pro
 
 
