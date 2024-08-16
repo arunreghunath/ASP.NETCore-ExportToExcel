@@ -2,8 +2,8 @@
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using DemoCoreApp.Data;
-using DemoCoreApp.Models;
+using ExportToExcelWebApplication.Data;
+using ExportToExcelWebApplication.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using NPOI.SS.UserModel;
