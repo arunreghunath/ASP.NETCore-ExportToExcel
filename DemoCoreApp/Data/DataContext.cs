@@ -1,7 +1,7 @@
-﻿using ExportToExcelWebApplication.Models;
+﻿using Demo.ExportToExcel.Web.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ExportToExcelWebApplication.Data
+namespace Demo.ExportToExcel.Web.Data
 {
     public class DataContext : DbContext
     {
